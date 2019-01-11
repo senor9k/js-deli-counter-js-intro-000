@@ -18,7 +18,7 @@ function currentLine(katzDeliLine) {
     let sentence = ""
     for (let i=0 ; i<katzDeliLine.length; i++) {
       sentence = `${sentence}${i+1}. ${katzDeliLine[i]}`
-      if (i<katzDeliLine.length-1) sentence = `${sentence}, `
+      i<katzDeliLine.length-1 ? sentence = `${sentence}, `
     }
     return `The line is currently: ${sentence}`
   } else {
